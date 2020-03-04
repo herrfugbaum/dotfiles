@@ -45,5 +45,5 @@ set tabstop=2
 " Show the cursor position
 set ruler
 
-" Show the current mode
-set showmode
+" Hide the current mode, since it's already shown by lightline
+set noshowmode
