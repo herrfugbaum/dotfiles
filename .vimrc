@@ -10,6 +10,8 @@ call plug#begin('~/.vim/plugged')
 " define the vim-plug plugins
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'¬
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Call vim-plug to end vim-plug configuration
 call plug#end()
@@ -28,6 +30,9 @@ set laststatus=2
 let g:lightline = {
         \ 'colorscheme': 'onedark',
         \ }
+
+" configure NERDTree
+let NERDTreeShowHidden=1
 
 " highlight current line
 set cursorline
