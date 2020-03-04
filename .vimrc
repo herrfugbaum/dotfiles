@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 
 " define the vim-plug plugins
 Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
 
 " Call vim-plug to end vim-plug configuration
 call plug#end()
@@ -18,7 +19,15 @@ set number
 
 " activate syntax highlighting
 syntax on
+" use italics
+let g:onedark_terminal_italics=1
+" use onedark colorscheme
 colorscheme onedark
+" use and configure lightline and use onedark theme for it
+set laststatus=2
+let g:lightline = {
+        \ 'colorscheme': 'onedark',
+        \ }
 
 " highlight current line
 set cursorline
