@@ -10,7 +10,7 @@ call plug#begin('~/.vim/plugged')
 " define the vim-plug plugins
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'¬
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Call vim-plug to end vim-plug configuration
