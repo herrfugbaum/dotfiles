@@ -33,6 +33,8 @@ let g:lightline = {
 
 " configure NERDTree
 let NERDTreeShowHidden=1
+" close vim if the only window left open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " highlight current line
 set cursorline
